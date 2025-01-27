@@ -39,11 +39,13 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Get the values from the EditText
                 String name = edName.getText().toString();
                 String course = edCourse.getText().toString();
                 String year = edYear.getText().toString();
                 String wham = edWham.getText().toString();
 
+                // Set the values to the TextView
                 sName.setText(name);
                 sCourse.setText(course);
                 sYear.setText(year);
