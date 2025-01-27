@@ -10,41 +10,41 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/txtusc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
             android:text="University of San Carlos"
-            android:textSize="20sp"
-            android:layout_marginBottom="16dp"/>
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+            android:padding="30px"
+            android:orientation="horizontal">
 
-                >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <!-- Name Row -->
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Name: "
-                        android:layout_marginEnd="8dp"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="Name: " />
 
                     <TextView
                         android:id="@+id/sname"
@@ -55,15 +55,15 @@
 
                 <!-- Course Row -->
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Course: "
-                        android:layout_marginEnd="8dp"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="Course: " />
 
                     <TextView
                         android:id="@+id/scourse"
@@ -74,15 +74,15 @@
 
                 <!-- Year Row -->
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Year: "
-                        android:layout_marginEnd="8dp"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="Year: " />
 
                     <TextView
                         android:id="@+id/syear"
@@ -93,15 +93,15 @@
 
                 <!-- WHAM Row -->
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="WHAM: "
-                        android:layout_marginEnd="8dp"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="WHAM: " />
 
                     <TextView
                         android:id="@+id/swham"
@@ -111,70 +111,51 @@
                 </LinearLayout>
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:id="@+id/img"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="50dp"
-                    android:contentDescription="User Profile Picture"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
-            </LinearLayout>
-
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="User Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
         </LinearLayout>
-
 
         <EditText
             android:id="@+id/edname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your name"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="Enter your name" />
 
         <EditText
             android:id="@+id/edcourse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Course"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Course" />
 
         <EditText
             android:id="@+id/edyear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter year"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="Enter year" />
 
         <EditText
             android:id="@+id/edwham"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter wham"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:hint="Enter wham" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save"
-            android:layout_marginTop="16dp" />
-
-
-
+            android:layout_marginTop="16dp"
+            android:text="Save" />
     </LinearLayout>
-
-
 </LinearLayout>
-
-    <!--  Rules
-            1. Create/Drag a component
-            2. Rename/Add id to the component
-            3. Declare the component
-            4. Cast/Reference the component
-     -->
