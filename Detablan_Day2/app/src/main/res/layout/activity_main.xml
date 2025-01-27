@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtusc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="University of San Carlos"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <!-- Name Row -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/sname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paul France M. Detablan" />
+                </LinearLayout>
+
+                <!-- Course Row -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course: "
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/scourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BS Computer Science" />
+                </LinearLayout>
+
+                <!-- Year Row -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Year: "
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/syear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2nd Year" />
+                </LinearLayout>
+
+                <!-- WHAM Row -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WHAM: "
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/swham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A gentlemen" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="User Profile Picture"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edcourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Course"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter year"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edwham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter wham"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <!--  Rules
+            1. Create/Drag a component
+            2. Rename/Add id to the component
+            3. Declare the component
+            4. Cast/Reference the component
+     -->
