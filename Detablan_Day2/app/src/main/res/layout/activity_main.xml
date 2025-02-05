@@ -50,7 +50,7 @@
                         android:id="@+id/sname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Paul France M. Detablan" />
+                        android:text="" />
                 </LinearLayout>
 
                 <!-- Course Row -->
@@ -69,7 +69,7 @@
                         android:id="@+id/scourse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BS Computer Science" />
+                        android:text="" />
                 </LinearLayout>
 
                 <!-- Year Row -->
@@ -88,7 +88,7 @@
                         android:id="@+id/syear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2nd Year" />
+                        android:text="" />
                 </LinearLayout>
 
                 <!-- WHAM Row -->
@@ -107,7 +107,7 @@
                         android:id="@+id/swham"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="A gentlemen" />
+                        android:text="" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -156,11 +156,28 @@
             android:hint="Enter wham" />
 
         <!-- Save Button -->
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Save" />
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Save" />
+            <Button
+                android:id="@+id/btnbrowse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Browse" />
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Next" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
