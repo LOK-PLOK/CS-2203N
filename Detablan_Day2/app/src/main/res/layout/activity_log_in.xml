@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".logIn"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="48dp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="FoodPanda"
+            android:textColor="#FF2b85"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="User Profile Picture"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foodpanda2"
+            app:layout_constraintDimensionRatio="1:1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginTop="32dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="Food For All"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="Fast delivery with no stops that will enjoy with you family and friends."
+            android:textColor="#666666"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUp"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Sign Up"
+            app:cornerRadius="12dp"
+            android:elevation="2dp"
+            android:backgroundTint="#F5F5F5"
+            app:rippleColor="#DDDDDD"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signIn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            app:cornerRadius="12dp"
+            android:elevation="2dp"
+            android:backgroundTint="#FF2b85"
+            app:rippleColor="#CC2266"/>
+    </LinearLayout>
+
+</LinearLayout>

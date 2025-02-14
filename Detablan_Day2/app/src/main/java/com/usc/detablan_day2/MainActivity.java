@@ -1,7 +1,6 @@
 package com.usc.detablan_day2;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -13,86 +12,75 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    TextView sName, sCourse, sYear, sWham;
+    TextView sName, sAddress, sPayment;
     ImageView img;
-    Button btn, btnNext, btnBrowse;
-    EditText edName, edCourse, edYear, edWham;
+    Button btn, btnNext;
+    EditText edName, edAddress, edPayment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize TextViews
         sName = findViewById(R.id.sname);
-        sCourse = findViewById(R.id.scourse);
-        sYear = findViewById(R.id.syear);
-        sWham = findViewById(R.id.swham);
+        sAddress = findViewById(R.id.saddress);
+        sPayment = findViewById(R.id.spayment);
+        
+        // Initialize ImageView
         img = findViewById(R.id.img);
+        
+        // Initialize Buttons
         btn = findViewById(R.id.button);
-        edName = findViewById(R.id.edname);
-        edCourse = findViewById(R.id.edcourse);
-        edYear = findViewById(R.id.edyear);
-        edWham = findViewById(R.id.edwham);
         btnNext = findViewById(R.id.btnnext);
-        btnBrowse = findViewById(R.id.btnbrowse);
+        
+        // Initialize EditTexts
+        edName = findViewById(R.id.edname);
+        edAddress = findViewById(R.id.edaddress);
+        edPayment = findViewById(R.id.edpayment);
 
-        // Set the default image and its resource ID as a tag
-        img.setImageResource(R.drawable.profile);
-        img.setTag(R.drawable.profile);
+        // Set the default image
+        img.setImageResource(R.drawable.ic_launcher_background);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = sName.getText().toString();
-                String course = sCourse.getText().toString();
-                String year = sYear.getText().toString();
-                String wham = sWham.getText().toString();
+                String address = sAddress.getText().toString();
+                String payment = sPayment.getText().toString();
                 
-                // Get the resource name instead of ID
-                String imagePath = "android.resource://" + getPackageName() + "/drawable/profile";
+                String imagePath = "android.resource://" + getPackageName() + "/drawable/morty";
         
                 boolean isValid = !TextUtils.isEmpty(name) &&
-                        !TextUtils.isEmpty(course) &&
-                        !TextUtils.isEmpty(year) &&
-                        !TextUtils.isEmpty(wham);
+                        !TextUtils.isEmpty(address) &&
+                        !TextUtils.isEmpty(payment);
         
-                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
+                Intent intent = new Intent(MainActivity.this, MenuPage.class);
                 intent.putExtra("name", name);
-                intent.putExtra("course", course);
-                intent.putExtra("year", year);
-                intent.putExtra("wham", wham);
-                intent.putExtra("imagePath", imagePath); // Pass the image path instead
+                intent.putExtra("address", address);
+                intent.putExtra("payment", payment);
+                intent.putExtra("imagePath", imagePath);
                 intent.putExtra("isValid", isValid);
                 startActivity(intent);
-            }
-        });
-
-        btnBrowse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://youtube.com"));
-                startActivity(i);
             }
         });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get the values from the EditText
+                // Get the values from EditText fields
                 String name = edName.getText().toString();
-                String course = edCourse.getText().toString();
-                String year = edYear.getText().toString();
-                String wham = edWham.getText().toString();
-                int imageId = R.drawable.profile;
+                String address = edAddress.getText().toString();
+                String payment = edPayment.getText().toString();
 
-                // Set the values to the TextView
+                // Set the values to the TextViews
                 sName.setText(name);
-                sCourse.setText(course);
-                sYear.setText(year);
-                sWham.setText(wham);
-                if (!name.isEmpty() || !course.isEmpty() || !year.isEmpty() || !wham.isEmpty()) {
-                    img.setImageResource(imageId);
-                    img.setTag(imageId); // Store the image resource ID as a tag
+                sAddress.setText(address);
+                sPayment.setText(payment);
+
+                // Update image if any field is not empty
+                if (!name.isEmpty() || !address.isEmpty() || !payment.isEmpty()) {
+                    img.setImageResource(R.drawable.morty);
                 }
             }
         });

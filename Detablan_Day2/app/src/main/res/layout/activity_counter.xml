@@ -1,102 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    tools:context=".CounterActivity">
+    android:background="#F5F5F5">
 
     <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/minusBtn"
-            android:layout_width="170dp"
-            android:layout_height="65dp"
-            android:text="-"
-            android:textSize="30dp"/>
+        android:orientation="vertical"
+        android:padding="35dp"
+        android:layout_marginTop="20dp"
+        tools:context=".CounterActivity">
 
-        <TextView
-            android:id="@+id/counter"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0"
-            android:textSize="40dp"
-            android:gravity="center"
-            android:layout_margin="10dp" />
-
-        <Button
-            android:id="@+id/addBtn"
-            android:layout_width="170dp"
-            android:layout_height="66dp"
-            android:text="+"
-            android:textSize="30dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txtname"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text=""
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/txtcourse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text=""
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/txtyear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text=""
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/txtwham"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text=""
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
+                <TextView
+                    android:id="@+id/meal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Burger"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/meal_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$45.99"
+                    android:textSize="24sp"
+                    android:textColor="#FF2b85"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <ImageView
+                    android:id="@+id/meal_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/burger"/>
+
+                <TextView
+                    android:id="@+id/meal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meal details go here."
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#666666"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Quantity Selector Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/minusBtn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:text="-"
+                    app:cornerRadius="28dp"
+                    android:textSize="24sp"
+                    app:backgroundTint="#FF0021"/>
+
+                <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addBtn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:text="+"
+                    app:cornerRadius="28dp"
+                    android:textSize="24sp"
+                    app:backgroundTint="#5cdb5c"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
 
-            <Button
-                android:id="@+id/btnback"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                android:textSize="30dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_to_cart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="64dp"
+                android:text="Add to Cart"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="12dp"
+                android:textSize="16sp"
+                app:backgroundTint="#FF2b85"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_out"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="64dp"
+                android:text="Check Out"
+                android:layout_marginStart="8dp"
+                app:cornerRadius="12dp"
+                android:textSize="16sp"
+                app:backgroundTint="#FF2b85"/>
         </LinearLayout>
 
+        <!-- Back Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnback"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Back"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="#FF2b85"
+            android:layout_marginHorizontal="24dp"/>
 
     </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>
