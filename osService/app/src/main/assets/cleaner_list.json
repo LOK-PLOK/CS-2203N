@@ -1,0 +1,164 @@
+{
+  "cleaners": [
+    {
+      "id": "1001",
+      "name": "Luis Aesthetics",
+      "image": "johndoe",
+      "rating": 4.5,
+      "age": 32,
+      "schedule": "Mon-Fri, 9AM-5PM",
+      "address": "123 Main St, New York",
+      "mobile": "+1 234 567 8901",
+      "services": [
+        "Home Cleaning",
+        "Deep Cleaning",
+        "Refrigerator Cleaning"
+      ],
+      "capabilities": {
+        "attitude": 4.7,
+        "quality": 4.4,
+        "satisfaction": 4.6
+      }
+    },
+    {
+      "id": "1002",
+      "name": "Paul Lok",
+      "image": "jamesmith",
+      "rating": 5.0,
+      "age": 28,
+      "schedule": "Mon-Sat, 8AM-4PM",
+      "address": "456 Park Ave, Chicago",
+      "mobile": "+1 345 678 9012",
+      "services": [
+        "Office Cleaning",
+        "Daytime Babysitting",
+        "Basic Exterior Wash"
+      ],
+      "capabilities": {
+        "attitude": 4.9,
+        "quality": 5.0,
+        "satisfaction": 4.8
+      }
+    },
+    {
+      "id": "1003",
+      "name": "Andrei Lats",
+      "image": "mikejohnson",
+      "rating": 4.0,
+      "age": 35,
+      "schedule": "Weekends only",
+      "address": "789 Oak Rd, Los Angeles",
+      "mobile": "+1 456 789 0123",
+      "services": [
+        "AC Maintenance",
+        "Office Cleaning",
+        "Home Cleaning"
+      ],
+      "capabilities": {
+        "attitude": 3.8,
+        "quality": 4.2,
+        "satisfaction": 4.0
+      }
+    },
+    {
+      "id": "1004",
+      "name": "Aaron Smith",
+      "image": "sarahwilliams",
+      "rating": 4.8,
+      "age": 30,
+      "schedule": "Tue-Sun, 10AM-6PM",
+      "address": "321 Pine St, Houston",
+      "mobile": "+1 567 890 1234",
+      "services": [
+        "Evening Babysitting",
+        "Weekend Babysitting",
+        "Deep Cleaning"
+      ],
+      "capabilities": {
+        "attitude": 4.9,
+        "quality": 4.7,
+        "satisfaction": 4.8
+      }
+    },
+    {
+      "id": "1005",
+      "name": "Mary Jones",
+      "image": "maryjones",
+      "rating": 4.7,
+      "age": 27,
+      "schedule": "Mon-Fri, 8AM-6PM",
+      "address": "555 Cedar Ln, Phoenix",
+      "mobile": "+1 678 901 2345",
+      "services": [
+        "Washing Machine Maintenance",
+        "Home Cleaning",
+        "Infant Care"
+      ],
+      "capabilities": {
+        "attitude": 4.8,
+        "quality": 4.6,
+        "satisfaction": 4.7
+      }
+    },
+    {
+      "id": "1006",
+      "name": "David Brown",
+      "image": "davidbrown",
+      "rating": 4.3,
+      "age": 40,
+      "schedule": "Weekends, 9AM-7PM",
+      "address": "876 Maple Dr, Boston",
+      "mobile": "+1 789 012 3456",
+      "services": [
+        "Complete Detailing",
+        "AC Installation",
+        "Post-Construction Cleaning"
+      ],
+      "capabilities": {
+        "attitude": 4.2,
+        "quality": 4.4,
+        "satisfaction": 4.3
+      }
+    },
+    {
+      "id": "1007",
+      "name": "Lisa Green",
+      "image": "lisagreen",
+      "rating": 4.9,
+      "age": 33,
+      "schedule": "Tue-Sat, 7AM-3PM",
+      "address": "234 Elm St, Seattle",
+      "mobile": "+1 890 123 4567",
+      "services": [
+        "Oven Cleaning",
+        "Daytime Babysitting",
+        "Dishwasher Cleaning"
+      ],
+      "capabilities": {
+        "attitude": 5.0,
+        "quality": 4.8,
+        "satisfaction": 4.9
+      }
+    },
+    {
+      "id": "1008",
+      "name": "Robert White",
+      "image": "robertwhite",
+      "rating": 4.6,
+      "age": 29,
+      "schedule": "Mon-Sun, Flexible",
+      "address": "432 Birch Rd, Denver",
+      "mobile": "+1 901 234 5678",
+      "services": [
+        "AC Repair",
+        "Filter Replacement",
+        "Premium Wash & Wax"
+      ],
+      "capabilities": {
+        "attitude": 4.5,
+        "quality": 4.7,
+        "satisfaction": 4.6
+      }
+    }
+  ]
+}

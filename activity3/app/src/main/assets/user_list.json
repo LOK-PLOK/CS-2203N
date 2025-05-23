@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "1087",
+      "name": "Paul Detablan",
+      "email": "PaulDetablan@gmail.com",
+      "gender": "Male",
+      "phone": "09295105245",
+      "contact": {
+        "home" : "344-3999",
+        "office": "123456789"
+      }
+    },
+    {
+      "id": "1088",
+      "name": "JC Detablan",
+      "email": "FCDetablan@gmail.com",
+      "gender": "Female",
+      "phone": "09295105246",
+      "contact": {
+        "home" : "344-3888",
+        "office": "123456788"
+      }
+    }
+  ]
+}

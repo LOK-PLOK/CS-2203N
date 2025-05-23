@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+   <!-- Base application theme. -->
+    <style name="Base.Theme.OsService" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.OsService" parent="Base.Theme.OsService" />
+
+    <!-- Button styles -->
+    <style name="YellowButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- Card styles -->
+    <style name="YellowCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <!-- Toolbar styles -->
+    <style name="YellowToolbar">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

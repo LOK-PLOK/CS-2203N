@@ -1,0 +1,159 @@
+{
+    "categories": [
+      {
+        "name": "Cleaning Service",
+        "icon": "cleanicon",
+        "services": [
+          {
+            "name": "Home Cleaning",
+            "description": "General house cleaning service",
+            "price": 45.00
+          },
+          {
+            "name": "Office Cleaning",
+            "description": "Professional office cleaning solution",
+            "price": 65.00
+          },
+          {
+            "name": "Deep Cleaning",
+            "description": "Thorough cleaning of specific areas",
+            "price": 85.00
+          },
+          {
+            "name": "Move-In/Out Cleaning",
+            "description": "Cleaning service for moving in or out",
+            "price": 95.00
+          },
+          {
+            "name": "Post-Construction Cleaning",
+            "description": "Cleanup after construction work",
+            "price": 120.00
+          }
+        ]
+      },
+      {
+        "name": "Cleaning Appliance",
+        "icon": "cleanapply",
+        "services": [
+          {
+            "name": "Refrigerator Cleaning",
+            "description": "Deep cleaning for refrigerators",
+            "price": 40.00
+          },
+          {
+            "name": "Oven Cleaning",
+            "description": "Professional oven cleaning service",
+            "price": 35.00
+          },
+          {
+            "name": "Washing Machine Maintenance",
+            "description": "Cleaning & maintenance for washing machines",
+            "price": 50.00
+          },
+          {
+            "name": "Dishwasher Cleaning",
+            "description": "Interior and exterior dishwasher cleaning",
+            "price": 30.00
+          },
+          {
+            "name": "Microwave Cleaning",
+            "description": "Thorough cleaning of microwaves",
+            "price": 25.00
+          }
+        ]
+      },
+      {
+        "name": "Babysitter",
+        "icon": "babysitter",
+        "services": [
+          {
+            "name": "Daytime Babysitting",
+            "description": "Childcare during daytime hours",
+            "price": 20.00
+          },
+          {
+            "name": "Evening Babysitting",
+            "description": "Childcare during evening hours",
+            "price": 25.00
+          },
+          {
+            "name": "Weekend Babysitting",
+            "description": "Weekend childcare services",
+            "price": 30.00
+          },
+          {
+            "name": "Infant Care",
+            "description": "Specialized care for infants",
+            "price": 35.00
+          },
+          {
+            "name": "After-School Care",
+            "description": "Care for children after school hours",
+            "price": 22.00
+          }
+        ]
+      },
+      {
+        "name": "Car Wash",
+        "icon": "carwash",
+        "services": [
+          {
+            "name": "Basic Exterior Wash",
+            "description": "Clean your car's exterior",
+            "price": 30.00
+          },
+          {
+            "name": "Interior Detailing",
+            "description": "Detailed cleaning of car interior",
+            "price": 65.00
+          },
+          {
+            "name": "Complete Detailing",
+            "description": "Full car cleaning service",
+            "price": 120.00
+          },
+          {
+            "name": "Premium Wash & Wax",
+            "description": "Exterior wash with wax protection",
+            "price": 85.00
+          },
+          {
+            "name": "Engine Bay Cleaning",
+            "description": "Professional engine compartment cleaning",
+            "price": 50.00
+          }
+        ]
+      },
+      {
+        "name": "Aircon Service",
+        "icon": "airconservice",
+        "services": [
+          {
+            "name": "AC Maintenance",
+            "description": "Regular maintenance service for AC units",
+            "price": 70.00
+          },
+          {
+            "name": "AC Repair",
+            "description": "Repair service for malfunctioning AC units",
+            "price": 120.00
+          },
+          {
+            "name": "AC Installation",
+            "description": "Professional AC installation service",
+            "price": 250.00
+          },
+          {
+            "name": "AC Deep Cleaning",
+            "description": "Deep cleaning of AC units",
+            "price": 90.00
+          },
+          {
+            "name": "Filter Replacement",
+            "description": "AC filter replacement service",
+            "price": 40.00
+          }
+        ]
+      }
+    ]
+  }
